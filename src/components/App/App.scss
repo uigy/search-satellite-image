@@ -1,0 +1,52 @@
+$response-top: 15vh;
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  .search {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+  }
+
+  .satellite-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./bg.jpg");
+    background-position: center;
+    z-index: 0;
+
+    img {
+      width: 100%;
+      background-color: white;
+    }
+
+    .loading {
+      position: absolute;
+      top: $response-top;
+    }
+
+    .error {
+      position: absolute;
+      top: $response-top;
+      color: antiquewhite;
+      font-size: 1.3rem;
+      text-shadow: 0 6px 4px black, 0 0 0.5em black;
+      text-align: center;
+
+      @media (min-width: 1024px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
