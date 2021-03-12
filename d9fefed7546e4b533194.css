@@ -1,0 +1,6 @@
+*{margin:0;box-sizing:border-box}body{font-family:roboto}
+
+main{display:flex;flex-direction:column}main .search{position:absolute;top:15px;left:0;right:0;width:90%;margin:0 auto;z-index:1}main .satellite-image{position:absolute;top:0;left:0;display:flex;justify-content:center;width:100%;min-height:100vh;background-image:url(img/bg.0e7e0d2a531c274e467cd9d2f6a1495e.jpg);background-position:center;z-index:0}main .satellite-image img{width:100%;background-color:white}main .satellite-image .loading{position:absolute;top:15vh}main .satellite-image .error{position:absolute;top:15vh;color:antiquewhite;font-size:1.3rem;text-shadow:0 6px 4px black, 0 0 0.5em black;text-align:center}@media (min-width: 1024px){main .satellite-image .error{font-size:2rem}}
+
+
+/*# sourceMappingURL=d9fefed7546e4b533194.css.map*/
